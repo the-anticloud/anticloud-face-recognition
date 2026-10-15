@@ -1,0 +1,74 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:f8a847ac-85b6-58be-be59-0a07ca4c9318",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T18:02:48Z",
+    "component": {
+      "type": "application",
+      "name": "FACE_RECOGNITION",
+      "version": "9f3061aaeed9",
+      "bom-ref": "pkg:generic/anticloud/FACE_RECOGNITION@9f3061aaeed9",
+      "purl": "pkg:generic/anticloud/FACE_RECOGNITION@9f3061aaeed9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "9f3061aaeed9a8756d2c970f5dfe066617a8281d"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/ageitgey/face_recognition"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "face_recognition_models",
+      "version": ">=0.3.0",
+      "purl": "pkg:pypi/face-recognition-models@0.3.0",
+      "bom-ref": "pypi/face_recognition_models@>=0.3.0"
+    },
+    {
+      "type": "library",
+      "name": "Click",
+      "version": ">=6.0",
+      "purl": "pkg:pypi/click@6.0",
+      "bom-ref": "pypi/Click@>=6.0"
+    },
+    {
+      "type": "library",
+      "name": "dlib",
+      "version": ">=19.7",
+      "purl": "pkg:pypi/dlib@19.7",
+      "bom-ref": "pypi/dlib@>=19.7"
+    },
+    {
+      "type": "library",
+      "name": "face_recognition",
+      "version": "=face_recognition.face_recognition_cli:main",
+      "purl": "pkg:pypi/face-recognition@face_recognition.face_recognition_cli:main",
+      "bom-ref": "pypi/face_recognition@=face_recognition.face_recognition_cli:main"
+    },
+    {
+      "type": "library",
+      "name": "face_detection",
+      "version": "=face_recognition.face_detection_cli:main",
+      "purl": "pkg:pypi/face-detection@face_recognition.face_detection_cli:main",
+      "bom-ref": "pypi/face_detection@=face_recognition.face_detection_cli:main"
+    }
+  ]
+}
